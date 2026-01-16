@@ -42,4 +42,4 @@ The repository contains the following key pages:
  
  Clean and commented code for better readability.
 
-                                                          Developed by Coding-with-Noor
+                                                   Developed by Coding-with-Noor
