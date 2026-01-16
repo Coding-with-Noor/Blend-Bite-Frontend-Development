@@ -33,13 +33,16 @@ The repository contains the following key pages:
  **Project Screenshots**
 
 ### Home Page
-![Home Page](Home.png)
+![Home Page](HomePage.png)
 
 ### About Us
 ![About Page](About.png)
 
 ### Our Menu
 ![Menu Page](Menu.png)
+
+### Gallery Page
+![Gallery Page](Gallery.png)
 
 ### Contact Us
 ![Contact Page](Contact.png)
