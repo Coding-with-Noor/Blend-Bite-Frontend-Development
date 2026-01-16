@@ -48,4 +48,4 @@ Screenshots
  
  Clean and commented code for better readability.
 
-Developed by Coding-with-Noor
+                                                          Developed by **Coding-with-Noor**
