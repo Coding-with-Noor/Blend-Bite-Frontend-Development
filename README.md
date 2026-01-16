@@ -1,5 +1,4 @@
 # Blend-Bite-Frontend-Development
-# Blend & Bite - Frontend Development
 
 Welcome to the **Blend & Bite** frontend project! This is a modern, responsive multi-page website designed for a restaurant/cafe setting, focusing on a clean user interface and smooth navigation.
 
