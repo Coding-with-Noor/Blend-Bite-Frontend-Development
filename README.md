@@ -30,6 +30,20 @@ The repository contains the following key pages:
  
  **CSS3**: For custom styling and branding.
  
+ **Project Screenshots**
+
+### Home Page
+![Home Page](Home.png)
+
+### About Us
+![About Page](About.png)
+
+### Our Menu
+![Menu Page](Menu.png)
+
+### Contact Us
+![Contact Page](Contact.png)
+ 
 **Features:**
 
  Fully responsive design for mobile and desktop.
