@@ -33,7 +33,7 @@ The repository contains the following key pages:
  **Project Screenshots**
 
 ### Home Page
-![HomePage](HomePage.png)
+![Home Page](HomePage.png)
 
 ### About Us
 ![About Page](About.png)
