@@ -30,14 +30,6 @@ The repository contains the following key pages:
  
  **CSS3**: For custom styling and branding.
 
-Screenshots
-
-
-
-
-
-
-
 **Features:**
 
  Fully responsive design for mobile and desktop.
