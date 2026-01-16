@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Blend & Bite Café</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #fffaf5;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .nav-link:hover {
+      color: #f5deb3 !important;
+      font-weight: 700;
+    }
+    .hero-section {
+      background: url('Assets/CafeI.jpg') no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      animation: fadeInUp 2s ease;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-content p {
+      font-size: 1.25rem;
+      margin-top: 15px;
+      color: #f5f5f5;
+    }
+
+    .hero-content .btn {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .hero-content .btn:hover {
+      transform: scale(1.07);
+    }
+
+    .featured {
+      padding: 80px 0;
+      background-color: #fffaf5;
+      text-align: center;
+    }
+
+    .featured h2 {
+      font-weight: 700;
+      color: #3e2723;
+      margin-bottom: 40px;
+    }
+
+    .feature-box {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-8px);
+    }
+
+    .feature-box img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #2b2b2b;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    footer a {
+      color: #f5deb3;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a href="HomePage.html" class="navbar-brand fw-bold fs-3">Blend & Bite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navBarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="navbar-item"><a href="HomePage.html" class="nav-link active">Home</a></li>
+          <li class="navbar-item"><a href="Menu.html" class="nav-link">Menu</a></li>
+          <li class="navbar-item"><a href="About.html" class="nav-link">About</a></li>
+          <li class="navbar-item"><a href="Gallery.html" class="nav-link">Gallery</a></li>
+          <li class="navbar-item"><a href="Contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section">
+    <div class="hero-content container">
+      <h1>Fresh Meals, Sweet Desserts & Perfect Coffee</h1>
+      <p>Made with love, served with warmth — every day at Blend & Bite ☕</p>
+      <div class="mt-4">
+        <a href="Menu.html" class="btn btn-light btn-lg me-3">View Menu</a>
+        <a href="Contact.html" class="btn btn-outline-light btn-lg">📞 Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured">
+    <div class="container">
+      <h2>Why You’ll Love Us ❤️</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-box">
+            <img src="Assets/coffeeBeans.avif" alt="Fresh Coffee">
+            <h5 class="fw-bold mt-2">Freshly Brewed Coffee</h5>
+            <p class="text-muted">Every cup made with premium roasted beans for a perfect aroma and taste.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box">
+            <img src="Assets/dessertDisplat.jpg" alt="Desserts">
+            <h5 class="fw-bold mt-2">Delicious Desserts</h5>
+            <p class="text-muted">From cheesecakes to brownies — our desserts are baked to perfection daily.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box">
+            <img src="Assets/mealPresentation.avif" alt="Meals">
+            <h5 class="fw-bold mt-2">Homemade Meals</h5>
+            <p class="text-muted">Warm meals made from fresh ingredients that feel just like home.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="mb-0">© 2025 Blend & Bite Café | All Rights Reserved | <a href="Contact.html">Contact Us</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Blend & Bite</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffaf5;
+      color: #3b3b3b;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background-color: #2b2b2b !important;
+    }
+
+    .nav-link {
+      color: white !important;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #f8c471 !important;
+      font-weight: 600;
+    }
+
+    .about-hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('Assets/Aboutus.jfif');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .about-hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+      color: #f9e4bc;
+    }
+
+    .about-hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 10px auto;
+      color: #f4e6d4;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .story-section {
+      padding: 100px 0;
+    }
+
+    .story-text {
+      line-height: 1.9;
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    .story-img img {
+      border-radius: 20px;
+      width: 100%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: all 0.4s ease;
+    }
+
+    .story-img img:hover {
+      transform: scale(1.03);
+    }
+
+    .vision-section {
+      background: #fdf7ef;
+      padding: 80px 0;
+    }
+
+    .vision-section blockquote {
+      font-size: 1.4rem;
+      color: #5a4634;
+    }
+
+    .team-section {
+      background-color: #f8f1e7;
+      padding: 100px 0;
+    }
+
+    .team-member {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: translateY(-8px);
+    }
+
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .team-member:hover img {
+      transform: scale(1.05);
+    }
+
+    .why-section {
+      padding: 100px 0;
+    }
+
+    .why-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 40px 25px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .why-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .why-card i {
+      font-size: 40px;
+      color: #a0522d;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #2b2b2b;
+      color: white;
+      padding: 25px 0;
+      text-align: center;
+    }
+
+    footer p {
+      margin-bottom: 0;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    footer a:hover {
+      color: #f8c471;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a href="HomePage.html" class="navbar-brand fw-bold fs-3">Blend & Bite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navBarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="navbar-item"><a href="HomePage.html" class="nav-link active">Home</a></li>
+          <li class="navbar-item"><a href="Menu.html" class="nav-link">Menu</a></li>
+          <li class="navbar-item"><a href="About.html" class="nav-link">About</a></li>
+          <li class="navbar-item"><a href="Gallery.html" class="nav-link">Gallery</a></li>
+          <li class="navbar-item"><a href="Contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="about-hero">
+    <div class="container">
+      <h1 data-aos="fade-up">Our Story, Our Passion</h1>
+      <p data-aos="fade-up" data-aos-delay="200">Where comfort meets creativity — and every cup tells a story.</p>
+      <div class="mt-4" data-aos="fade-up" data-aos-delay="400">
+        <a href="#story" class="btn btn-outline-light btn-lg">Discover Our Story</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="story-section" id="story">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 story-text" data-aos="fade-right">
+          <h2 class="fw-bold mb-4">From a Dream to a Destination ☕</h2>
+          <p>
+            Blend & Bite Café was born from a love for flavors and a dream of creating a place that feels
+            like home. Founded in 2024 by a small team of friends who shared a passion for coffee, desserts, and cozy
+            spaces, Blend & Bite quickly became a favorite spot for food lovers, students, and creative souls alike.
+          </p>
+          <p>
+            Our philosophy is simple — good food brings people together. From handcrafted lattes to freshly baked
+            desserts, every item on our menu is made with heart. We source our ingredients locally, prepare every meal
+            fresh, and make sure that each bite brings warmth and satisfaction.
+          </p>
+          <p>
+            Whether you come in for a quick coffee or stay for hours chatting with friends, Blend & Bite is designed
+            to be your space — relaxing, inviting, and full of flavor.
+          </p>
+        </div>
+        <div class="col-md-6 story-img" data-aos="fade-left">
+          <img src="Assets/CafeI.jpg" alt="Cafe Interior">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vision-section text-center">
+    <div class="container" data-aos="fade-up">
+      <blockquote class="fs-4 fst-italic text-muted">
+        “A café is not just a place for coffee — it’s where memories brew and conversations bloom.”
+      </blockquote>
+      <p class="fw-bold mt-3">— Team Blend & Bite</p>
+    </div>
+  </section>
+
+  <!-- <section class="team-section text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-5" data-aos="fade-up">Meet the People Behind the Magic ✨</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-member">
+            <h5 class="fw-bold mt-3">Mahnoor</h5>
+            <p class="text-muted">Head Chef</p>
+            <p>Crafting flavors that turn simple dishes into unforgettable experiences.</p>
+            <div class="d-flex justify-content-center gap-3 mt-3">
+              <i class="bi bi-instagram text-danger"><a href="https://www.instagram.com/"></a></i>
+              <i class="bi bi-facebook text-primary"><a href="https://www.facebook.com/"></a></i>
+              <i class="bi bi-twitter text-info"><a href="https://x.com/"></a></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="team-member">
+            <h5 class="fw-bold mt-3">Muhammad Hussnain</h5>
+            <p class="text-muted">Lead Barista</p>
+            <p>Turning every cup of coffee into a piece of art, one pour at a time.</p>
+            <div class="d-flex justify-content-center gap-3 mt-3">
+              <i class="bi bi-instagram text-danger"><a href="https://www.instagram.com/"></a></i>
+              <i class="bi bi-facebook text-primary"><a href="https://www.facebook.com/"></a></i>
+              <i class="bi bi-twitter text-info"><a href="https://x.com/"></a></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="team-member">
+            <h5 class="fw-bold mt-3">Kashan Tauseef</h5>
+            <p class="text-muted">Dessert Artist</p>
+            <p>Creating sweet masterpieces that bring joy to every table.</p>
+            <div class="d-flex justify-content-center gap-3 mt-3">
+              <i class="bi bi-instagram text-danger"><a href="https://www.instagram.com/"></a></i>
+              <i class="bi bi-facebook text-primary"><a href="https://www.facebook.com/"></a></i>
+              <i class="bi bi-twitter text-info"><a href="https://x.com/"></a></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+  <section class="why-section text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-5" data-aos="fade-up">Why Our Customers Love Us 💛</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="why-card">
+            <i class="bi bi-cup-hot-fill"></i>
+            <h5 class="fw-bold mt-3">Handcrafted Perfection</h5>
+            <p>Every drink and dish is prepared by hand, blending flavor, texture, and creativity.</p>
+          </div>
+        </div> 
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="why-card">
+            <i class="bi bi-people-fill"></i>
+            <h5 class="fw-bold mt-3">Community & Comfort</h5>
+            <p>We’re more than a café — we’re a gathering place where stories and smiles are shared.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="why-card">
+            <i class="bi bi-heart-fill"></i>
+            <h5 class="fw-bold mt-3">Made with Love</h5>
+            <p>Every recipe carries a touch of warmth and a sprinkle of care — from our kitchen to your heart.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p class="mb-2">&copy; 2025 <strong>Blend & Bite Café</strong> | Crafted with ❤️ & Coffee Aroma</p>
+      <div>
+        <a href="#"><i class="bi bi-facebook me-3"></i></a>
+        <a href="#"><i class="bi bi-instagram me-3"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+
+</html>
+
+
+

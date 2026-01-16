@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Blend & Bite Café</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #fff9f4;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .nav-link:hover {
+      color: #f5deb3 !important;
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+
+    .contact-hero {
+      background: url('/Assets/contact.jfif') center/cover no-repeat;
+      height: 80vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .contact-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    .contact-hero h1 {
+      position: relative;
+      z-index: 2;
+      font-weight: 700;
+      font-size: 3.5rem;
+      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+      animation: fadeInDown 1.5s ease;
+    }
+
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .contact-section {
+      padding: 60px 0;
+    }
+
+    .contact-form {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      transition: all 0.3s ease;
+    }
+
+    .contact-form:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .form-control {
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      padding: 12px;
+    }
+
+    .form-control:focus {
+      border-color: #d17f38;
+      box-shadow: 0 0 5px rgba(209, 127, 56, 0.4);
+    }
+
+    .contact-info {
+      background: linear-gradient(135deg, #fff4e1, #fce5d1);
+      padding: 40px 25px;
+      border-radius: 15px;
+      color: #333;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      height: 100%;
+    }
+
+    .contact-info h4 {
+      color: #d17f38;
+    }
+
+    .btn-dark {
+      background-color: #d17f38;
+      border: none;
+    }
+
+    .btn-dark:hover {
+      background-color: #b96b2f;
+      transform: scale(1.03);
+      transition: all 0.3s ease;
+    }
+
+    iframe {
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background: #2b2b2b;
+      color: white;
+      padding: 20px 0;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #f5deb3;
+      transition: 0.3s;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a href="HomePage.html" class="navbar-brand fw-bold fs-3">Blend & Bite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navBarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a href="HomePage.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="Menu.html" class="nav-link">Menu</a></li>
+          <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="Gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="Contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="contact-hero">
+    <h1>We'd Love to Hear From You ☕</h1>
+  </section>
+
+  <section class="contact-section container">
+    <div class="row g-5 align-items-stretch">
+      <div class="col-md-7">
+        <div class="contact-form">
+          <h3 class="fw-bold mb-4 text-center text-dark">Send Us a Message</h3>
+          <form onsubmit="return validation()" method="post">
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email Address</label>
+              <input type="email" id="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-control" placeholder="Message subject">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea id="message" class="form-control" rows="5" placeholder="Write your message here..."></textarea>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Contact</label>
+              <input type="tel" id="contact" pattern="[0-9]{11}" class="form-control"
+                placeholder="Enter Your Number">
+            </div>
+            <button type="submit" id="submit" class="btn btn-dark w-100">📨 Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="contact-info">
+          <h4 class="fw-bold mb-3">Visit Us</h4>
+          <p><strong>📍 Address:</strong> 123 Café Street, Gulberg, Lahore</p>
+          <p><strong>📞 Phone:</strong> +92 300 1234567</p>
+          <p><strong>✉️ Email:</strong> blendandbite@gmail.com</p>
+          <p><strong>🕐 Hours:</strong><br> Mon-Sun: 8:00 AM - 10:00 PM</p>
+
+          <h5 class="mt-4 fw-bold">Follow Us</h5>
+          <p>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+            <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-5">
+    <h3 class="text-center fw-bold mb-3 text-dark">Find Us on Map</h3>
+    <div class="text-center">
+      <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.241264871843!2d-73.98731968459377!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480293%3A0x5117470702599614!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1675234567890!5m2!1sen!2sus"
+        width="100%" height="400" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+
+  <footer class="text-center">
+    <p class="mb-0">© 2025 <strong>Blend & Bite Café</strong> | Made with ❤️ & Coffee ☕</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function validation() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const subject = document.getElementById("subject").value.trim();
+      const message = document.getElementById("message").value.trim();
+      const contact = document.getElementById("contact").value.trim();
+
+      if (!name || !email || !subject || !message || !contact) {
+        alert("All fields are mandatory!");
+        return false;
+      }
+
+      if (!email.endsWith("@gmail.com")) {
+        alert("Email must include @gmail.com");
+        return false;
+      }
+
+      if (contact.length !== 11 || isNaN(contact)) {
+        alert("Phone number must be exactly 11 digits!");
+        return false;
+      }
+
+      alert("Form validated successfully! Thanks for contacting us.");
+      return true;
+    }
+  </script>
+
+</body>
+</html>
