@@ -19,6 +19,7 @@ The repository contains the following key pages:
  **Gallery.html**: A visual display of the restaurant's ambiance and dishes.
  
  **Contact.html**: A functional layout for users to get in touch or make inquiries.
+ 
 
 **Tech Stack:**
 
@@ -30,23 +31,7 @@ The repository contains the following key pages:
  
  **CSS3**: For custom styling and branding.
  
- **Project Screenshots**
 
-### Home Page
-![Home Page](HomePage.png)
-
-### About Us
-![About Page](About.png)
-
-### Our Menu
-![Menu Page](Menu.png)
-
-### Gallery Page
-![Gallery Page](Gallery.png)
-
-### Contact Us
-![Contact Page](Contact.png)
- 
 **Features:**
 
  Fully responsive design for mobile and desktop.
